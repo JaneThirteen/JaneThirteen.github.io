@@ -19,9 +19,9 @@
 ]]></content>
   </entry>
   <entry>
-    <title></title>
+    <title>笔记</title>
     <url>/2023/02/25/%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h1 id="笔记"><a href="#笔记" class="headerlink" title="笔记"></a>笔记</h1><h2 id="1-结构体的理解："><a href="#1-结构体的理解：" class="headerlink" title="1.结构体的理解："></a>1.结构体的理解：</h2><p>在C中结构体的定义常见有两种：</p>
+    <content><![CDATA[<h2 id="1-结构体的理解："><a href="#1-结构体的理解：" class="headerlink" title="1.结构体的理解："></a>1.结构体的理解：</h2><p>在C中结构体的定义常见有两种：</p>
 <div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="code"><pre><span class="line">struck Student</span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> num;</span><br><span class="line">	<span class="type">char</span> name[<span class="number">20</span>]</span><br><span class="line">	......</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">	struck Student stu[<span class="number">10</span>];</span><br><span class="line">	......</span><br><span class="line">	......</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 
 <div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">typedef</span> struck Student</span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> num;</span><br><span class="line">	<span class="type">char</span> name[<span class="number">20</span>]</span><br><span class="line">	......</span><br><span class="line">&#125;Stu_1;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">	Stu_1 stu[<span class="number">10</span>];</span><br><span class="line">	......</span><br><span class="line">	......</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
