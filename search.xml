@@ -18,4 +18,24 @@
 <p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 ]]></content>
   </entry>
+  <entry>
+    <title></title>
+    <url>/2023/02/25/%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h1 id="笔记"><a href="#笔记" class="headerlink" title="笔记"></a>笔记</h1><h2 id="1-结构体的理解："><a href="#1-结构体的理解：" class="headerlink" title="1.结构体的理解："></a>1.结构体的理解：</h2><p>在C中结构体的定义常见有两种：</p>
+<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="code"><pre><span class="line">struck Student</span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> num;</span><br><span class="line">	<span class="type">char</span> name[<span class="number">20</span>]</span><br><span class="line">	......</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">	struck Student stu[<span class="number">10</span>];</span><br><span class="line">	......</span><br><span class="line">	......</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">typedef</span> struck Student</span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> num;</span><br><span class="line">	<span class="type">char</span> name[<span class="number">20</span>]</span><br><span class="line">	......</span><br><span class="line">&#125;Stu_1;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">	Stu_1 stu[<span class="number">10</span>];</span><br><span class="line">	......</span><br><span class="line">	......</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>上面两种方式的比较可以看出区别：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">struck Student stu[10]</span><br><span class="line">Stu_1 stu[10]</span><br></pre></td></tr></table></figure></div>
+
+<p>二者在引用声明上有所区别。</p>
+<h2 id="2-typedef-的用法理解："><a href="#2-typedef-的用法理解：" class="headerlink" title="2.typedef 的用法理解："></a>2.typedef 的用法理解：</h2><h3 id="1理解"><a href="#1理解" class="headerlink" title="1理解"></a>1理解</h3><p>typedef 跟 struck 一样都为C语言的关键字，typedef 的作用是为一种数据类型定义一个新的名字，这里的数据类型包括内部数据类型 （int，char等），和自定义数据类型（struck等）。</p>
+<h3 id="2用法及其作用"><a href="#2用法及其作用" class="headerlink" title="2用法及其作用"></a>2用法及其作用</h3><p>结合传统的声明变量进行改变：</p>
+<p>【第一步】：int a；——传统声明变量表达式；</p>
+<p>【第二步】：int New_name;——使用自定义的“<strong>类型名</strong>”代替“<strong>变量名</strong>” a；</p>
+<p>【第三步】：typedef int New_name;——在语句开头加上 typedef，则 New_name 就是我们定义的 “<strong>新类型</strong>”；</p>
+<p>【特别注意】：第一步，第二步用法是不合理的，这里仅仅为了方便记忆，在写代码时直接第三步即可。</p>
+]]></content>
+  </entry>
 </search>
