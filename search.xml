@@ -37,5 +37,11 @@
 <p>【第三步】：typedef int New_name;——在语句开头加上 typedef，则 New_name 就是我们定义的 “<strong>新类型</strong>”；</p>
 <p>【特别注意】：第一步，第二步用法是不合理的，这里仅仅为了方便记忆，在写代码时直接第三步即可。</p>
 ]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+      </tags>
   </entry>
 </search>
